@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: newCamundaMn
+  server:
+    port: 8081
+netty:
+  default:
+    allocator:
+      max-order: 3
+camunda:
+  admin-user:
+    id: admin
+    password: admin
+    firstname: Shonski
+    lastname: Bhakonski
+  generic-properties:
+    properties:
+      initialize-telemetry: true
+  webapps:
+    enabled: true
+  rest:
+    enabled: true
+  filter:
+    create: "All tasks"
+  run:
+    process-engine-plugins:
+      - plugin-class: org.camunda.spin.plugin.impl.SpinProcessEnginePlugin

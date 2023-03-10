@@ -1,0 +1,74 @@
+{
+  "components": [
+    {
+      "text": "# Material Request Form",
+      "type": "text",
+      "id": "Field_0n7kyt2"
+    },
+    {
+      "label": "Activity Type",
+      "type": "textfield",
+      "id": "Field_0vkhrp5",
+      "key": "activitytype",
+      "description": "Enter activity type",
+      "validate": {
+        "required": true
+      },
+      "properties": {}
+    },
+    {
+      "label": "Select",
+      "type": "select",
+      "id": "Field_1jszvud",
+      "key": "tower",
+      "valuesKey": "towers",
+      "description": "Tower",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Material Type",
+      "type": "textfield",
+      "id": "Field_098fadn",
+      "key": "materialtype",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Priority",
+      "type": "textfield",
+      "id": "Field_0k2x73u",
+      "key": "priority",
+      "description": "Priority"
+    },
+    {
+      "label": "Quantity Required",
+      "type": "number",
+      "id": "Field_1n7obs0",
+      "key": "quantityrequired",
+      "validate": {
+        "required": true,
+        "min": 0
+      },
+      "defaultValue": 0
+    },
+    {
+      "label": "Reason",
+      "type": "textfield",
+      "id": "Field_0nssvzl",
+      "key": "describethereason",
+      "description": "Describe the reason"
+    }
+  ],
+  "type": "default",
+  "id": "materialRequestForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.6.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}

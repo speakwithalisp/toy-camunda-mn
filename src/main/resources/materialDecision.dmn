@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_152bvvs" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.6.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="materialDecision" name="Decision 1">
+    <decisionTable id="DecisionTable_16q09sg">
+      <input id="Input_1" camunda:inputVariable="quantityrequired">
+        <inputExpression id="InputExpression_1" typeRef="integer" expressionLanguage="feel">
+          <text>quantityrequired</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="outcome" typeRef="boolean" biodi:width="192" />
+      <rule id="DecisionRule_0eveb8a">
+        <inputEntry id="UnaryTests_1j5c773">
+          <text>&lt; 100</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06ednuk">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hvpcd1">
+        <inputEntry id="UnaryTests_119m4j7">
+          <text>&gt;= 100</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h9fgdg">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="materialDecision">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

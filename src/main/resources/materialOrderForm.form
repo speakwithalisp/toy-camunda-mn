@@ -1,0 +1,24 @@
+{
+  "components": [
+    {
+      "text": "# Material Order",
+      "type": "text",
+      "id": "Field_0cp2zb0"
+    },
+    {
+      "label": "Order quantity",
+      "type": "number",
+      "id": "Field_1edtydm",
+      "key": "quantityrequired"
+    }
+  ],
+  "type": "default",
+  "id": "materialOrderForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.6.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}
